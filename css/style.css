@@ -1,0 +1,541 @@
+@import url("https://fonts.google.com/specimen/Lato:wght@400;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.google.com/specimen/Roboto+Mono?query=robo:wght@400;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 1280px;
+  display: flex;
+}
+.container img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 24px;
+}
+.container .sideNav {
+  width: 296px;
+  padding: 32px 0;
+  background: #edf4ee;
+}
+.container .sideNav h1 {
+  padding-left: 32px;
+}
+.container .sideNav h1 a {
+  display: block;
+  width: 150px;
+  height: 40px;
+  background-image: url("https://hexschool.github.io/webLayoutTraining1st/week5/logo-ANSWER.svg");
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.container .sideNav ul {
+  margin-top: 42px;
+}
+.container .sideNav ul li {
+  margin-bottom: 28px;
+}
+.container .sideNav ul li a {
+  display: flex;
+  align-items: center;
+  padding-left: 32px;
+  color: #121212;
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+}
+.container .sideNav ul li a:hover {
+  color: #2a8356;
+  border-left: 4px solid #2a8356;
+}
+.container .sideNav ul li a span {
+  margin-right: 16px;
+}
+.container .sideNav .sideNav-buttom {
+  margin-top: 364px;
+  padding-left: 32px;
+  display: flex;
+}
+.container .sideNav .sideNav-buttom img {
+  margin-right: 16px;
+}
+.container .sideNav .sideNav-buttom div h2 {
+  color: #121212;
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+}
+.container .sideNav .sideNav-buttom div a {
+  color: #2a8356;
+}
+.container .rightSide {
+  width: 984px;
+  padding: 0 32px;
+}
+.container .rightSide .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.container .rightSide .header .title {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+.container .rightSide .header .title h2 {
+  font-size: 24px;
+  line-height: 32px;
+  margin-right: 40px;
+}
+.container .rightSide .header .title .add-admin {
+  border: none;
+  background-color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+.container .rightSide .header .title .add-admin span {
+  color: #2a8356;
+}
+.container .rightSide .header .title .modal-header {
+  border-bottom: none;
+}
+.container .rightSide .header .title .modal-header,
+.container .rightSide .header .title .modal-body {
+  padding: 32px;
+  padding-bottom: 0;
+}
+.container .rightSide .header .title .modal-footer {
+  border-top: none;
+}
+.container .rightSide .header .title .form-style {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #cdddcd;
+  font-size: 16px;
+}
+.container .rightSide .header .title .form-style:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+.container .rightSide .header .title .form-style h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.container .rightSide .header .title .form-style label {
+  font-size: 14px;
+  line-height: 24px;
+}
+.container .rightSide .header .title .form-style input {
+  margin-bottom: 16px;
+  height: 51px;
+}
+.container .rightSide .header .title .form-style button {
+  padding: 16px;
+  color: #2a8356;
+  font-weight: bold;
+  border: 1px solid #cdddcd;
+  border-radius: 2px;
+  background-color: #fff;
+  margin-top: 18px;
+  margin-bottom: 24px;
+}
+.container .rightSide .header .title .form-style select {
+  padding: 16px;
+  margin-bottom: 24px;
+}
+.container .rightSide .header .title .form-style .form-checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.container .rightSide .header .title .form-style .form-checkbox:last-child {
+  margin-bottom: 0;
+}
+.container .rightSide .header .title .form-style .form-checkbox input {
+  margin-right: 8px;
+  margin-bottom: 0;
+  height: 24px;
+}
+.container .rightSide .header-end span {
+  margin-left: 24px;
+}
+.container .rightSide .assignment {
+  display: flex;
+  justify-content: space-between;
+}
+.container .rightSide .assignment .assignment-select {
+  width: 320px;
+}
+.container .rightSide .assignment .assignment-select h3 {
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.container .rightSide .assignment .assignment-select h3 span {
+  margin-left: 7px;
+  color: #2a8356;
+}
+.container .rightSide .assignment .assignment-select ul li:first-child,
+.container .rightSide .assignment .assignment-select ul li a:hover {
+  background-color: #cdddcd;
+}
+.container .rightSide .assignment .assignment-select ul li a {
+  display: block;
+  border: 1px solid #cdddcd;
+  padding: 12px;
+  font-size: 12px;
+  line-height: 24px;
+  color: #121212;
+}
+.container .rightSide .assignment .assignment-select ul li a p {
+  display: flex;
+  justify-content: space-between;
+}
+.container .rightSide .assignment .assignment-select ul li a .assignment-title {
+  margin-bottom: 4px;
+}
+.container .rightSide .assignment .assignment-select ul li a .assignment-content {
+  font-weight: bold;
+}
+.container .rightSide .assignment .assignment-select ul li a .assignment-content span:first-child {
+  font-size: 16px;
+}
+.container .rightSide .assignment .assignment-select ul li a .assignment-content span:last-child {
+  color: #0000009a;
+}
+.container .rightSide .assignment-panel {
+  width: 584px;
+  line-height: 24px;
+}
+.container .rightSide .assignment-panel h5 {
+  text-align: right;
+  margin-bottom: 8px;
+  font-size: 12px;
+  color: #707070;
+}
+.container .rightSide .assignment-panel h4 {
+  font-size: 12px;
+}
+.container .rightSide .assignment-panel h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+.container .rightSide .assignment-panel .question-title {
+  padding: 12px 16px;
+  border: 1px solid #cdddcd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #edf4ee;
+}
+.container .rightSide .assignment-panel .question {
+  padding: 16px;
+  border: 1px solid #cdddcd;
+}
+.container .rightSide .assignment-panel .question-owner {
+  display: flex;
+}
+.container .rightSide .assignment-panel .question-owner img {
+  margin-right: 8px;
+}
+.container .rightSide .assignment-panel .question-owner img h4 {
+  color: #0000009a;
+}
+.container .rightSide .assignment-panel .question-content {
+  margin-top: 16px;
+  padding-left: 48px;
+  padding-right: 16px;
+}
+.container .rightSide .assignment-panel .question-content p {
+  font-size: 14px;
+  line-height: 21px;
+}
+.container .rightSide .assignment-panel .question-content p span {
+  color: #2a8356;
+  border-radius: 2px;
+  background: #edf4ee;
+  width: 40px;
+}
+.container .rightSide .assignment-panel .question-content button {
+  padding: 10px 16px;
+  margin: 16px 0;
+  display: flex;
+  align-items: center;
+  border: 1px solid #cdddcd;
+  border-radius: 2px;
+}
+.container .rightSide .assignment-panel .question-content button span {
+  display: inline-block;
+  font-size: 16px;
+}
+.container .rightSide .assignment-panel .question-content .buttom-line {
+  border: 1px solid #cdddcd;
+}
+.container .rightSide .assignment-panel .tool-list {
+  display: flex;
+  justify-content: center;
+}
+.container .rightSide .assignment-panel .tool-list li {
+  margin-right: 24px;
+}
+.container .rightSide .assignment-panel .tool-list li h3 {
+  display: flex;
+}
+.container .rightSide .assignment-panel .tool-list li span {
+  width: 24px;
+  height: 24px;
+}
+.container .rightSide .assignment-panel .reply-section {
+  border: 1px solid #cdddcd;
+}
+.container .rightSide .assignment-panel .reply-section p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #00000062;
+  padding-top: 16px;
+  padding-left: 16px;
+  margin-bottom: 176px;
+}
+.container .rightSide .admin-list {
+  font-size: 16px;
+  line-height: 24px;
+  width: 100%;
+}
+.container .rightSide .admin-list .list-title {
+  display: flex;
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+}
+.container .rightSide .admin-list .list-title h2 span {
+  font-size: 13px;
+  color: #2a8356 !important;
+}
+.container .rightSide .admin-list ul li {
+  display: flex;
+  padding: 16px 0;
+  border-bottom: 1px solid #cdddcd;
+}
+.container .rightSide .admin-list ul li p:nth-of-type(1) {
+  width: 12%;
+}
+.container .rightSide .admin-list ul li p:nth-of-type(2) {
+  width: 25%;
+}
+.container .rightSide .admin-list ul li p:nth-of-type(3) {
+  width: 35%;
+}
+.container .rightSide .admin-list ul li p:nth-of-type(4) {
+  width: 20%;
+}
+.container .rightSide .admin-list ul li p:nth-of-type(5) {
+  width: 18%;
+  text-align: right;
+}
+.container .rightSide .admin-list ul li p:nth-of-type(5) span:last-child {
+  margin-left: 25px;
+}
+.container .rightSide .footer {
+  margin-top: 64px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.container .rightSide .footer li a {
+  border: 1px solid #2a8356;
+  display: block;
+  padding: 6px 12px;
+  color: #121212;
+}
+.container .rightSide .footer li a:hover {
+  background-color: #2a8356;
+  color: white;
+}
+.container .rightSide .footer li:first-child a {
+  color: #2a8356;
+  border-radius: 2px 0px 0px 2px;
+  padding: 1px 2px;
+}
+.container .rightSide .footer li:first-child a:hover {
+  color: white;
+}
+.container .rightSide .footer li:last-child a {
+  color: #2a8356;
+  border-radius: 0px 2px 2px 0px;
+  padding: 1px 2px;
+}
+.container .rightSide .footer li:last-child a:hover {
+  color: white;
+}
+.container .btnSection {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+}
+.container .btnSection button {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  padding: 8px 32px;
+  border-radius: 2px;
+  border: 1px solid #2a8356;
+}
+.container .btnSection button:first-child {
+  background-color: #fff;
+  color: #2a8356;
+  margin-right: 8px;
+}
+.container .btnSection button:last-child {
+  background-color: #2a8356;
+  color: #fff;
+  margin-right: 24px;
+}
+
+/*# sourceMappingURL=style.css.map */
